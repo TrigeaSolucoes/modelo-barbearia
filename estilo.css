@@ -37,7 +37,7 @@ a{color:var(--latao)}
 .s-desc{color:var(--fosco)}
 .s-tempo{color:#cfc6b8}
 .s-preco{font-family:"Oswald",sans-serif;font-size:clamp(24px,2.6vw,34px);font-weight:700;color:var(--latao)}
-.s-preco::before{content:"R$ ";font-size:.55em;vertical-align:.45em}
+.s-preco::before{content:"R$ ";font-size:.875em;vertical-align:.45em}
 .parede a{justify-self:end;color:var(--papel);font-weight:600;text-decoration:none;border:1px solid #4a433d;padding:9px 16px;border-radius:2px}
 .parede a:hover{border-color:var(--latao);color:var(--latao)}
 
@@ -78,3 +78,5 @@ a{color:var(--latao)}
   .trabalho{grid-template-columns:1fr 1fr;grid-auto-rows:180px}
   .trabalho img:first-child{grid-row:auto;grid-column:1/-1}.trabalho img:last-child{grid-column:1/-1}
 }
+/* revisão de usabilidade no celular */
+@media (max-width:760px){main :is(button,select,input:not([type=checkbox]):not([type=radio]),.botao){min-height:44px}main label:has(>input[type=radio]),main label:has(>input[type=checkbox]){min-height:40px;display:flex;align-items:center;gap:8px}.endereco a{display:inline-block;padding:10px 0}}
